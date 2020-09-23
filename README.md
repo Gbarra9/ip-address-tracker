@@ -1,5 +1,7 @@
 # Frontend Mentor - IP Address Tracker
 
+**IMPORTANT - Turn off any adblocker to allow client to fetch data from IPify server**
+<br/>
 https://findmyipaddress.netlify.app/
 
 ## Welcome! 👋
