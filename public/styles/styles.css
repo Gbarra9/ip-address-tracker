@@ -1,0 +1,184 @@
+:root {
+  --white-background: #fff;
+  --black-background: #000;
+  --darker-grey: #2b2b2b;
+  --dark-grey: #969696;
+  --light-grey: #e5e5e5;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+.search-container {
+  height: 35vh;
+}
+
+.background-image-design {
+  background: url(/assets/images/pattern-bg.png);
+  background-size: cover;
+}
+
+.main-header {
+  color: var(--white-background);
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.search-form {
+  height: 50px;
+  margin: auto 5%;
+  width: 90%;
+  position: relative;
+}
+
+#ip-search {
+  height: 100%;
+  width: 85%;
+  position: relative;
+  border: 0;
+  border-radius: 10px 0 0 10px;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.submit-button {
+  height: 100%;
+  width: 15%;
+  position: absolute;
+  border: 0;
+  background: var(--black-background);
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+.submit-button:hover {
+  background: var(--darker-grey);
+  transition: 0.5s ease-in;
+  transform: scale(1.05);
+}
+
+.ip-info-container {
+  margin: auto 5%;
+  text-align: center;
+  position: relative;
+  top: 1rem;
+  background-color: var(--white-background);
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.ip-info-container ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+.ip-info-container ul > li {
+  list-style: none;
+  display: block;
+}
+
+.ip-info-text-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--dark-grey);
+}
+
+.ip-info-text-data {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0.5rem 0 0.7rem;
+}
+
+.ip-info-text-data,
+.ip-info-text-label {
+  word-break: break-word;
+  padding: 0 12.5%;
+}
+
+#mapid {
+  z-index: 0;
+  height: 65vh;
+}
+
+/* MEDIA QUERIES  */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 850px) and (orientation: landscape) {
+  .search-form {
+    height: 30px;
+    margin: auto 12.5%;
+    width: 75%;
+  }
+  .ip-info-container {
+    margin: auto 5%;
+  }
+  .flex-container {
+    display: flex;
+  }
+  .ip-info-container ul > li {
+    width: 25%;
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+  }
+  .ip-info-container ul > li:not(:last-child) {
+    border-right: 1px solid var(--light-grey);
+  }
+  .ip-info-text-label,
+  .ip-info-text-data {
+    padding: 0;
+    text-align: left;
+  }
+  .ip-info-text-label {
+    margin: 0;
+  }
+  .ip-info-text-data {
+    margin: 0.5rem 0 0 0;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .main-header {
+    padding: 1.5rem;
+  }
+  .search-form {
+    height: 50px;
+    margin: auto 25%;
+    width: 50%;
+  }
+  .ip-info-container {
+    margin: auto 10%;
+    top: 3rem;
+    padding: 1rem 0;
+  }
+  .flex-container {
+    display: flex;
+  }
+  .ip-info-container ul > li {
+    width: 25%;
+    padding-left: 1rem;
+    padding-right: 2rem;
+  }
+  .ip-info-container ul > li:not(:last-child) {
+    border-right: 1px solid var(--light-grey);
+  }
+  .ip-info-text-label,
+  .ip-info-text-data {
+    padding: 0;
+    text-align: left;
+  }
+  .ip-info-text-label {
+    margin: 0;
+  }
+
+  .ip-info-text-data {
+    margin: 0.5rem 0 0 0;
+    font-size: 1.1rem;
+  }
+}

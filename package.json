@@ -1,0 +1,27 @@
+{
+  "name": "ip-address-tracker",
+  "version": "1.0.0",
+  "description": "![Design preview for the IP Address Tracker coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
+    "dotenv": "^8.2.0",
+    "dotenv-webpack": "^3.0.0",
+    "http-server": "^0.12.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "dev-server": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
+    "serve": "./node_modules/.bin/http-server"
+  },
+  "author": "",
+  "license": "ISC"
+}
